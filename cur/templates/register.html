@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+  <article class="register_window" align="center">
+    <h2> Registration </h2>
+    <form action="" method="POST">
+        <p>
+            <label for="username">Username</label>
+            <input type="text" placeholder="login" name="username" id="username">
+        </p>
+        <p>
+            <label for="password_1">Password</label>
+            <input type="password" placeholder="password" name="password_1" id="password_1">
+        </p>
+        <p>
+            <label for="password_2">Password</label>
+            <input type="password" placeholder="password" name="password_2" id="password_2">
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+        {% if message %}
+        <p>{{ message }}</p>
+        {% endif %}
+    </form>
+  </article>
+  <form action="/">
+      <input type="submit" value="Back to the main page">
+  </form>
+</body>
+</html>
